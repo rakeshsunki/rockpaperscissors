@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <title> java script practice</title>
-        <link rel="stylesheet" href="/jstyle.css">
-    </header>
-    <body>
-        <header><h1>rock paper scissors</h1></header>
-        <div class="outer">
-                <div class="uchoice" id="rock">Rock</div>
-                <div class="uchoice" id="paper">Paper</div>
-                <div class="uchoice" id="scissors">scissor</div>
-        </div>
-        <div id="scoreboard">
-            Your Score: 0 - Computer Score: 0
-        </div>
-        
+<html lang="en">
 
-        <pre id="output"> pick your choice </pre>
-        <script src="/firstjscript.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./jstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-gamepad"></i> Rock Paper Scissors</h1>
+            <p class="tagline">Choose your weapon wisely!</p>
+        </header>
+
+        <main>
+            <div class="game-instructions">
+                <p>Select one of the options below to play against the computer</p>
+            </div>
+
+            <div class="outer">
+                <div class="uchoice" id="rock">
+                    <i class="fas fa-hand-rock"></i>
+                    <span>Rock</span>
+                </div>
+                <div class="uchoice" id="paper">
+                    <i class="fas fa-hand-paper"></i>
+                    <span>Paper</span>
+                </div>
+                <div class="uchoice" id="scissors">
+                    <i class="fas fa-hand-scissors"></i>
+                    <span>Scissors</span>
+                </div>
+            </div>
+
+            <div id="scoreboard">
+                <div class="score-item">
+                    <span class="label">You</span>
+                    <span class="value" id="user-score">0</span>
+                </div>
+                <div class="score-divider">vs</div>
+                <div class="score-item">
+                    <span class="label">Computer</span>
+                    <span class="value" id="computer-score">0</span>
+                </div>
+            </div>
+
+            <div id="output" class="result-display">Pick your choice</div>
+
+            <button id="reset-game" class="reset-button">Reset Game</button>
+        </main>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> by You | 2025</p>
+        </footer>
+    </div>
+
+    <script src="./firstjscript.js"></script>
+</body>
+
 </html>
